@@ -1,0 +1,203 @@
+head(rankall("heart attack", 20), 10)
+## [1] "DETAR HOSPITAL NAVARRO"
+rankhospital("MD", "heart attack", "worst")
+## [1] "HARFORD MEMORIAL HOSPITAL"
+rankhospital("NC", "heart attack", "worst")
+## [1] "WAYNE MEMORIAL HOSPITAL"
+head(rankall("heart attack", 20), 10)
+##                               hospital state
+## 1                                 <NA>    AK
+## 2       D W MCMILLAN MEMORIAL HOSPITAL    AL
+## 3    ARKANSAS METHODIST MEDICAL CENTER    AR
+## 4  JOHN C LINCOLN DEER VALLEY HOSPITAL    AZ
+## 5                SHERMAN OAKS HOSPITAL    CA
+## 6             SKY RIDGE MEDICAL CENTER    CO
+## 7              MIDSTATE MEDICAL CENTER    CT
+## 8                                 <NA>    DC
+## 9                                 <NA>    DE
+## 10      SOUTH FLORIDA BAPTIST HOSPITAL    FL
+tail(rankall("pneumonia", "worst"), 3)
+##                                      hospital state
+## 52 MAYO CLINIC HEALTH SYSTEM - NORTHLAND, INC    WI
+## 53                     PLATEAU MEDICAL CENTER    WV
+## 54           NORTH BIG HORN HOSPITAL DISTRICT    WY
+tail(rankall("heart failure"), 10)
+##                                                             hospital state
+## 45                         WELLMONT HAWKINS COUNTY MEMORIAL HOSPITAL    TN
+## 46                                        FORT DUNCAN MEDICAL CENTER    TX
+## 47 VA SALT LAKE CITY HEALTHCARE - GEORGE E. WAHLEN VA MEDICAL CENTER    UT
+## 48                                          SENTARA POTOMAC HOSPITAL    VA
+## 49                            GOV JUAN F LUIS HOSPITAL & MEDICAL CTR    VI
+## 50                                              SPRINGFIELD HOSPITAL    VT
+## 51                                         HARBORVIEW MEDICAL CENTER    WA
+## 52                                    AURORA ST LUKES MEDICAL CENTER    WI
+## 53                                         FAIRMONT GENERAL HOSPITAL    WV
+## 54                                        CHEYENNE VA MEDICAL CENTER    WY
+rankall("pneumonia", "worst")
+##                                       hospital state
+## 1                 ALASKA NATIVE MEDICAL CENTER    AK
+## 2                  JACKSONVILLE MEDICAL CENTER    AL
+## 3                  RIVER VALLEY MEDICAL CENTER    AR
+## 4               HAVASU REGIONAL MEDICAL CENTER    AZ
+## 5               DELANO REGIONAL MEDICAL CENTER    CA
+## 6         ST MARYS HOSPITAL AND MEDICAL CENTER    CO
+## 7                        MILFORD HOSPITAL, INC    CT
+## 8               GEORGETOWN UNIVERSITY HOSPITAL    DC
+## 9        CHRISTIANA CARE HEALTH SERVICES, INC.    DE
+## 10        SEVEN RIVERS REGIONAL MEDICAL CENTER    FL
+## 11            MCDUFFIE REGIONAL MEDICAL CENTER    GA
+## 12            GUAM MEMORIAL HOSPITAL AUTHORITY    GU
+## 13                MAUI MEMORIAL MEDICAL CENTER    HI
+## 14                       BURGESS HEALTH CENTER    IA
+## 15                 BEAR LAKE MEMORIAL HOSPITAL    ID
+## 16                           ST JOHNS HOSPITAL    IL
+## 17 INDIANA UNIVERSITY HEALTH LA PORTE HOSPITAL    IN
+## 18              WESTERN PLAINS MEDICAL COMPLEX    KS
+## 19                     CALDWELL MEDICAL CENTER    KY
+## 20           TERREBONNE GENERAL MEDICAL CENTER    LA
+## 21                     ATHOL MEMORIAL HOSPITAL    MA
+## 22                      CIVISTA MEDICAL CENTER    MD
+## 23                          MID COAST HOSPITAL    ME
+## 24                 ASPIRUS GRAND VIEW HOSPITAL    MI
+## 25                      GLACIAL RIDGE HOSPITAL    MN
+## 26          UNIVERSITY OF MISSOURI HEALTH CARE    MO
+## 27                      BOLIVAR MEDICAL CENTER    MS
+## 28                     GLENDIVE MEDICAL CENTER    MT
+## 29                   VIDANT EDGECOMBE HOSPITAL    NC
+## 30                    OAKES COMMUNITY HOSPITAL    ND
+## 31                 MEMORIAL COMMUNITY HOSPITAL    NE
+## 32               LAKES REGION GENERAL HOSPITAL    NH
+## 33              BERGEN REGIONAL MEDICAL CENTER    NJ
+## 34                                UNM HOSPITAL    NM
+## 35              RENOWN REGIONAL MEDICAL CENTER    NV
+## 36                    ONEIDA HEALTHCARE CENTER    NY
+## 37          COSHOCTON COUNTY MEMORIAL HOSPITAL    OH
+## 38                MERCY MEMORIAL HEALTH CENTER    OK
+## 39                           BAY AREA HOSPITAL    OR
+## 40           POTTSTOWN MEMORIAL MEDICAL CENTER    PA
+## 41                HOSPITAL SAN CARLOS BORROMEO    PR
+## 42                   SOUTH COUNTY HOSPITAL INC    RI
+## 43            LAURENS COUNTY HEALTHCARE SYSTEM    SC
+## 44               HURON REGIONAL MEDICAL CENTER    SD
+## 45              ATHENS REGIONAL MEDICAL CENTER    TN
+## 46                    LIMESTONE MEDICAL CENTER    TX
+## 47                         CASTLEVIEW HOSPITAL    UT
+## 48                      SENTARA LEIGH HOSPITAL    VA
+## 49           ROY LESTER SCHNEIDER HOSPITAL,THE    VI
+## 50                        PORTER HOSPITAL, INC    VT
+## 51                      OLYMPIC MEDICAL CENTER    WA
+## 52  MAYO CLINIC HEALTH SYSTEM - NORTHLAND, INC    WI
+## 53                      PLATEAU MEDICAL CENTER    WV
+## 54            NORTH BIG HORN HOSPITAL DISTRICT    WY
+rankall("heart attack", "best")
+##                                    hospital state
+## 1          PROVIDENCE ALASKA MEDICAL CENTER    AK
+## 2                  CRESTWOOD MEDICAL CENTER    AL
+## 3                   ARKANSAS HEART HOSPITAL    AR
+## 4                      MAYO CLINIC HOSPITAL    AZ
+## 5         GLENDALE ADVENTIST MEDICAL CENTER    CA
+## 6      ST MARYS HOSPITAL AND MEDICAL CENTER    CO
+## 7                        WATERBURY HOSPITAL    CT
+## 8                       PROVIDENCE HOSPITAL    DC
+## 9         BAYHEALTH - KENT GENERAL HOSPITAL    DE
+## 10               MOUNT SINAI MEDICAL CENTER    FL
+## 11                 STEPHENS COUNTY HOSPITAL    GA
+## 12         GUAM MEMORIAL HOSPITAL AUTHORITY    GU
+## 13                      HILO MEDICAL CENTER    HI
+## 14              MARY GREELEY MEDICAL CENTER    IA
+## 15                  PORTNEUF MEDICAL CENTER    ID
+## 16                    SAINT JOSEPH HOSPITAL    IL
+## 17   ST VINCENT HEART CENTER OF INDIANA LLC    IN
+## 18                    KANSAS HEART HOSPITAL    KS
+## 19        ST ELIZABETH MEDICAL CENTER NORTH    KY
+## 20                ST FRANCIS MEDICAL CENTER    LA
+## 21     BETH ISRAEL DEACONESS MEDICAL CENTER    MA
+## 22              JOHNS HOPKINS HOSPITAL, THE    MD
+## 23                            YORK HOSPITAL    ME
+## 24                    MUNSON MEDICAL CENTER    MI
+## 25                        ST MARYS HOSPITAL    MN
+## 26                    BOONE HOSPITAL CENTER    MO
+## 27                    WESLEY MEDICAL CENTER    MS
+## 28                    BENEFIS HOSPITALS INC    MT
+## 29       CAROLINAS MEDICAL CENTER-NORTHEAST    NC
+## 30             SANFORD MEDICAL CENTER FARGO    ND
+## 31           FAITH REGIONAL HEALTH SERVICES    NE
+## 32                  CATHOLIC MEDICAL CENTER    NH
+## 33             EAST ORANGE GENERAL HOSPITAL    NJ
+## 34                      ST VINCENT HOSPITAL    NM
+## 35      SUNRISE HOSPITAL AND MEDICAL CENTER    NV
+## 36                     NYU HOSPITALS CENTER    NY
+## 37                     JEWISH HOSPITAL, LLC    OH
+## 38            OKLAHOMA HEART HOSPITAL SOUTH    OK
+## 39               PORTLAND VA MEDICAL CENTER    OR
+## 40                      DOYLESTOWN HOSPITAL    PA
+## 41        HOSPITAL DR CAYETANO COLL Y TOSTE    PR
+## 42                          MIRIAM HOSPITAL    RI
+## 43                      MUSC MEDICAL CENTER    SC
+## 44 AVERA HEART HOSPITAL OF SOUTH DAKOTA LLC    SD
+## 45    METHODIST MEDICAL CENTER OF OAK RIDGE    TN
+## 46         CYPRESS FAIRBANKS MEDICAL CENTER    TX
+## 47            DIXIE REGIONAL MEDICAL CENTER    UT
+## 48       CHESAPEAKE REGIONAL MEDICAL CENTER    VA
+## 49        ROY LESTER SCHNEIDER HOSPITAL,THE    VI
+## 50       FLETCHER ALLEN HOSPITAL OF VERMONT    VT
+## 51   PROVIDENCE SACRED HEART MEDICAL CENTER    WA
+## 52                    BELLIN MEMORIAL HSPTL    WI
+## 53       MONONGALIA COUNTY GENERAL HOSPITAL    WV
+## 54                   WYOMING MEDICAL CENTER    WY
+rankall("heart failure", "best")
+##                                                             hospital state
+## 1                                           SOUTH PENINSULA HOSPITAL    AK
+## 2                                 GEORGE H. LANIER MEMORIAL HOSPITAL    AL
+## 3                       VA CENTRAL AR. VETERANS HEALTHCARE SYSTEM LR    AR
+## 4                               BANNER GOOD SAMARITAN MEDICAL CENTER    AZ
+## 5                                  CENTINELA HOSPITAL MEDICAL CENTER    CA
+## 6                                          PARKER ADVENTIST HOSPITAL    CO
+## 7                                            YALE-NEW HAVEN HOSPITAL    CT
+## 8                                                PROVIDENCE HOSPITAL    DC
+## 9                                  BAYHEALTH - KENT GENERAL HOSPITAL    DE
+## 10                         FLORIDA HOSPITAL HEARTLAND MEDICAL CENTER    FL
+## 11                                                  DOCTORS HOSPITAL    GA
+## 12                                  GUAM MEMORIAL HOSPITAL AUTHORITY    GU
+## 13                                            KUAKINI MEDICAL CENTER    HI
+## 14                               MERCY MEDICAL CENTER - CEDAR RAPIDS    IA
+## 15                            SAINT ALPHONSUS MEDICAL CENTER - NAMPA    ID
+## 16                                    RUSH UNIVERSITY MEDICAL CENTER    IL
+## 17                                         ST CATHERINE HOSPITAL INC    IN
+## 18                                               HAYS MEDICAL CENTER    KS
+## 19                                        WESTLAKE REGIONAL HOSPITAL    KY
+## 20                                    WILLIS KNIGHTON MEDICAL CENTER    LA
+## 21                                     ST ELIZABETH'S MEDICAL CENTER    MA
+## 22                                   MEDSTAR GOOD SAMARITAN HOSPITAL    MD
+## 23                MILES MEMORIAL HOSPITAL (LINCOLN COUNTY HEALTHCARE    ME
+## 24                                        HARPER UNIVERSITY HOSPITAL    MI
+## 25                        ESSENTIA HEALTH ST JOSEPH'S MEDICAL CENTER    MN
+## 26                                        NORTH KANSAS CITY HOSPITAL    MO
+## 27                                         SOUTH CENTRAL REG MED CTR    MS
+## 28                                      COMMUNITY MEDICAL CENTER INC    MT
+## 29                               FIRSTHEALTH MOORE REGIONAL HOSPITAL    NC
+## 30                                        ST ALOISIUS MEDICAL CENTER    ND
+## 31                                           NEBRASKA HEART HOSPITAL    NE
+## 32                                          VALLEY REGIONAL HOSPITAL    NH
+## 33                                      EAST ORANGE GENERAL HOSPITAL    NJ
+## 34                              LOVELACE REGIONAL HOSPITAL - ROSWELL    NM
+## 35                                             MOUNTAINVIEW HOSPITAL    NV
+## 36                                  KINGSBROOK JEWISH MEDICAL CENTER    NY
+## 37                                                 FAIRVIEW HOSPITAL    OH
+## 38                                     DUNCAN REGIONAL HOSPITAL, INC    OK
+## 39                                        PORTLAND VA MEDICAL CENTER    OR
+## 40                                    PHILADELPHIA VA MEDICAL CENTER    PA
+## 41                                  SAN LUKE'S MEMORIAL HOSPITAL INC    PR
+## 42                                                 WESTERLY HOSPITAL    RI
+## 43                                           PALMETTO HEALTH BAPTIST    SC
+## 44                          AVERA HEART HOSPITAL OF SOUTH DAKOTA LLC    SD
+## 45                         WELLMONT HAWKINS COUNTY MEMORIAL HOSPITAL    TN
+## 46                                        FORT DUNCAN MEDICAL CENTER    TX
+## 47 VA SALT LAKE CITY HEALTHCARE - GEORGE E. WAHLEN VA MEDICAL CENTER    UT
+## 48                                          SENTARA POTOMAC HOSPITAL    VA
+## 49                            GOV JUAN F LUIS HOSPITAL & MEDICAL CTR    VI
+## 50                                              SPRINGFIELD HOSPITAL    VT
+## 51                                         HARBORVIEW MEDICAL CENTER    WA
+## 52                                    AURORA ST LUKES MEDICAL CENTER    WI
+## 53                                         FAIRMONT GENERAL HOSPITAL    WV
+## 54                                        CHEYENNE VA MEDICAL CENTER    WY
